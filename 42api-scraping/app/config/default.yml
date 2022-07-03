@@ -1,0 +1,11 @@
+#
+# default.yml
+#
+# copy this file and rename it local.yml (is ignore by .gitignore)
+#
+
+api:
+  intra42:
+    credentials:
+      cid: '{SECRET}'
+      secret: '{SECRET}'
