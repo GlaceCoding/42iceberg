@@ -9,7 +9,7 @@ def store_documents(documents, collection):
 		if not stored:
 			n = n + 1
 			doc['_id'] = doc['id']
-			collection.insert_one(doc, ordered = False)
+			collection.insert_one(doc)
 		elif stored['updated_at'] != doc['updated_at']:
 			n = n + 1
 			collection.update_one({ '_id': doc['id'] }, { '$set': doc })

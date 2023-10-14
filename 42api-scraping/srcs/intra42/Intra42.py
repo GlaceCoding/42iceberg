@@ -103,7 +103,7 @@ class Intra42:
 						stack = []
 					stack += obj
 			dup = b - a
-			print('\tdubplicate: ' + str(dup) + ' (' + str(round(dup / b * 100)) + '%)')
+			print('\tduplicate: ' + str(dup) + ' (' + str(round(dup / b * 100)) + '%)')
 
 			if a < 100 and (not force or (force and b == a)):
 				return stack

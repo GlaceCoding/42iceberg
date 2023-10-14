@@ -19,7 +19,7 @@ requirements.txt.lock: requirements.txt
 run: init
 	@( \
 		source venv/bin/activate; \
-		python main.py \
+		python3 main.py \
 	)
 
 .PHONY: all init install run
